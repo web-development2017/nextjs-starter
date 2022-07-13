@@ -1,6 +1,6 @@
 import { useSession } from "next-auth/react";
 
-export default function restricted() {
+export default function Restricted() {
     const { data: session, status } = useSession({required: true});
 
     if(status === 'authenticated'){
