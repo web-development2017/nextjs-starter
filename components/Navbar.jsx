@@ -37,7 +37,7 @@ export default function Navbar(){
                     <ul>
                         <li><Link href="/"><a>Home</a></Link></li>
                         <li><Link href="/restricted"><a>Account</a></Link></li>
-                        <li onClick={() => signOut({ callbackUrl: 'http://localhost:3000' }) }><a href="/">Logout</a></li>                    
+                        <li onClick={() => signOut({ callbackUrl: 'http://localhost:3000' }) }><Link href="/"><a>Logout</a></Link></li>                    
                     </ul>
                 </nav>
             </div>
