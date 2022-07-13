@@ -6,18 +6,15 @@ const restricted = () => {
 
     if(status === 'authenticated'){
         return(
-            <div>
-                <p>Welcome to your account page { session.user.name }</p>
-                <button onClick={()=>signOut()}>Sign out</button>
-            </div>
+            <main className="p-10 mx-auto max-w-4xl">
+                <div>
+                    <p className="mb-20 text-xl text-center">Welcome to your account page { session.user.name }</p>
+                </div>
+            </main>
+            
         )
-
     }else{
-        return (
-            <div>
-                <p>This page is restricted to logged in users</p>
-            </div>
-        )
+        return ""
     }
   
   

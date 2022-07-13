@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* navbar */
+.nav-container {
+    /* padding: 0 2rem; */
+  }
+  nav {
+    margin: 20px auto 40px;
+    display: flex;
+    align-items: center;
+  
+    justify-content: space-between;
+    max-width: 56rem;
+  }
+  
+  nav ul {
+    margin-left: auto;
+    list-style-type: none;
+    padding: 0;
+  }
+  nav li {
+    display: inline-block;
+    margin-left: 16px;
+  }
+  nav li.btn {
+    padding: 10px 16px;
+    border: 2px solid var(--primary);
+    border-radius: 30px;
+    font-weight: 600;
+    color: var(--primary);
+    cursor: pointer;
+  }
+  nav li.btn:hover {
+    color: white;
+    background: var(--primary);
+  }
