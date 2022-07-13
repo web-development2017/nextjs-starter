@@ -23,7 +23,8 @@ export default function Navbar(){
                     <h1>Example</h1>
                     <ul>
                         <li><Link href="/"><a>Home</a></Link></li>
-                        <li onClick={ signIn }><a>Login</a></li>                    
+                        {/* <li onClick={ signIn }><a>Login</a></li>                     */}
+                        <button onClick={ signIn }>Login</button>
                     </ul>
                 </nav>
             </div>
