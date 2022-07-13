@@ -1,7 +1,6 @@
-import React from 'react';
-import {useSession, signOut} from "next-auth/react";
+import { useSession } from "next-auth/react";
 
-const restricted = () => {
+export default function restricted() {
     const { data: session, status } = useSession({required: true});
 
     if(status === 'authenticated'){
@@ -15,9 +14,5 @@ const restricted = () => {
         )
     }else{
         return ""
-    }
-  
-  
+    } 
 }
-
-export default restricted
